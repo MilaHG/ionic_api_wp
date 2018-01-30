@@ -1,0 +1,8 @@
+{
+  "name": "commonspop",
+  "app_id": "7eef3d2f",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

@@ -1,0 +1,149 @@
+<ion-header>
+
+  <ion-navbar no-border-bottom>
+    <ion-title>
+      Les Capsules Vidéos
+    </ion-title>
+  </ion-navbar>
+
+  <ion-toolbar no-border-top>
+    <ion-segment [(ngModel)]="capsules">
+      <ion-segment-button value="populaires">
+        Populaires
+      </ion-segment-button>
+      <ion-segment-button value="recentes">
+        Récentes
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content padding>
+
+  <div [ngSwitch]="capsules">
+
+    <div *ngSwitchCase="'populaires'">
+      <ion-card>
+
+        <ion-item>
+          <ion-avatar item-start>
+            <img src="http://keenthemes.com/preview/metronic/theme/assets/pages/media/profile/profile_user.jpg">
+          </ion-avatar>
+          <h2>Alejandro</h2>
+          <p>Villeneuve la Garenne</p>
+        </ion-item>
+
+        <img src="https://img.youtube.com/vi/GsbpGvf9jYw/0.jpg">
+
+        <ion-card-content>
+          <p>Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?! Whoa. This is heavy.</p>
+        </ion-card-content>
+
+        <ion-row>
+          <ion-col>
+            <button ion-button icon-left clear small>
+              <ion-icon name="thumbs-up"></ion-icon>
+              <div>12</div>
+            </button>
+          </ion-col>
+          <ion-col>
+            <button ion-button icon-left clear small>
+              <ion-icon name="text"></ion-icon>
+              <div>4</div>
+            </button>
+          </ion-col>
+          <ion-col center text-center>
+            <ion-note>
+              <!-- moment.js pour le calcul de la période  -->
+              Il y a 2 minutes
+            </ion-note>
+          </ion-col>
+        </ion-row>
+
+      </ion-card>
+    </div>
+
+    <div *ngSwitchCase="'recentes'">
+
+      <ion-card>
+
+        <ion-item>
+          <ion-avatar item-start>
+            <img src="http://keenthemes.com/preview/metronic/theme/assets/pages/media/profile/profile_user.jpg">
+          </ion-avatar>
+          <h2>Alejandro</h2>
+          <p>Villeneuve la Garenne</p>
+        </ion-item>
+
+        <img src="https://img.youtube.com/vi/wJnBTPUQS5A/0.jpg">
+
+        <ion-card-content>
+          <p>Hope you guys like this track - it's a remake of the instrumental ”Spectre” that I released a few years ago. Some of you might recognize it as it’s been part of my live shows lately.</p>
+        </ion-card-content>
+
+        <ion-row>
+          <ion-col>
+            <button ion-button icon-left clear small>
+              <ion-icon name="thumbs-up"></ion-icon>
+              <div>3</div>
+            </button>
+          </ion-col>
+          <ion-col>
+            <button ion-button icon-left clear small>
+              <ion-icon name="text"></ion-icon>
+              <div>1</div>
+            </button>
+          </ion-col>
+          <ion-col center text-center>
+            <ion-note>
+              <!-- moment.js pour le calcul de la période  -->
+              Il y a 20 minutes
+            </ion-note>
+          </ion-col>
+        </ion-row>
+
+      </ion-card>
+
+      <ion-card>
+
+        <ion-item>
+          <ion-avatar item-start>
+            <img src="http://www.venmond.com/demo/vendroid/img/avatar/big.jpg">
+          </ion-avatar>
+          <h2>Mila</h2>
+          <p>Pantin</p>
+        </ion-item>
+
+        <img src="https://img.youtube.com/vi/2i2khp_npdE/0.jpg">
+
+        <ion-card-content>
+          <p>Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?! Whoa. This is heavy.</p>
+        </ion-card-content>
+
+        <ion-row>
+          <ion-col>
+            <button ion-button icon-left clear small>
+              <ion-icon name="thumbs-up"></ion-icon>
+              <div>12</div>
+            </button>
+          </ion-col>
+          <ion-col>
+            <button ion-button icon-left clear small>
+              <ion-icon name="text"></ion-icon>
+              <div>4</div>
+            </button>
+          </ion-col>
+          <ion-col center text-center>
+            <ion-note>
+              <!-- moment.js pour le calcul de la période  -->
+              Il y a 2 minutes
+            </ion-note>
+          </ion-col>
+        </ion-row>
+
+      </ion-card>
+    </div>
+
+  </div>
+</ion-content>
